@@ -10,6 +10,7 @@
 
 body {
   font-family: "Roboto", sans-serif;
+  line-height: 1.4rem; /* Arranges buttons better */ 
 }
 
 a {
@@ -24,6 +25,35 @@ p {
 
 .text-primary {
   color: #93cb52;
+}
+
+.l-heading {
+    font-size: 4rem;
+    margin-bottom: 0.75rem;
+    line-height: 1.1;
+}
+
+.lead{
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
+}
+
+.btn {
+    display: inline-block;
+    color: #fff;
+    background: #93cb52;
+    padding: 0.5rem 2rem;
+    border: none;
+    border-radius: 0.5rem;
+}
+
+.btn:hover {
+    background: #7ab436
+}
+
+.btn-dark {
+    background: #333;
+    color: #fff;
 }
 
 /* navbar */
@@ -42,16 +72,40 @@ p {
   display: flex;
   align-items: center;
   list-style: none;
-  margin: 0 0.25rem; 
+  margin: 0 0.25rem;
 }
 
 #navbar ul li a {
-    color: #fff;
-    padding: 0.75rem;
-    margin: 0 0.25rem; 
+  color: #fff;
+  padding: 0.75rem;
+  margin: 0 0.25rem;
 }
 
 #navbar ul li a:hover {
-    background: #93cb52;
-    border-radius: 0.5rem;
+  background: #93cb52;
+  border-radius: 0.5rem;
+}
+
+/* Showcase */
+#showcase {
+  background: #333 url("../img/showcase.jpg") no-repeat center center/cover;
+  height: 100vh;
+  color: #fff;
+}
+
+#showcase .showcase-content {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  /* To make the showcase-content have the heigth of the showcase.. Helps also aligning vertically(center)*/
+  height: 100%;
+  width: 100%;
+  padding: 0 2rem;
+  /* Overlay */
+  position: absolute;
+  top: 56px;
+  left: 0;
+  background: rgba(0, 0, 0, 0.4);
 }
