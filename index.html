@@ -116,13 +116,81 @@
           <span class="text-primary">Our</span> Clients
         </h2>
         <div class="items">
-          <div><img src="./img/logos/logo1.png" alt="Client"></div>
-          <div><img src="./img/logos/logo2.png" alt="Client"></div>
-          <div><img src="./img/logos/logo3.png" alt="Client"></div>
-          <div><img src="./img/logos/logo4.png" alt="Client"></div>
-          <div><img src="./img/logos/logo5.png" alt="Client"></div>
+          <div><img src="./img/logos/logo1.png" alt="Client" /></div>
+          <div><img src="./img/logos/logo2.png" alt="Client" /></div>
+          <div><img src="./img/logos/logo3.png" alt="Client" /></div>
+          <div><img src="./img/logos/logo4.png" alt="Client" /></div>
+          <div><img src="./img/logos/logo5.png" alt="Client" /></div>
         </div>
       </div>
     </section>
+
+    <!-- section: contact -->
+    <section id="contact">
+      <div class="contact-form bg-primary p-2">
+        <h2 class=""><span>Contact</span> us</h2>
+        <p>Please use the form to contact us</p>
+        <div class="map"></div>
+        <form>
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Enter Your Name"
+            />
+          </div>
+          <div class="form-group">
+            <label for="name">email</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Enter your email adress"
+            />
+          </div>
+          <div class="form-group">
+            <label for="phone">phone</label>
+            <input
+              type="text"
+              name="phone"
+              id="phone"
+              placeholder="Enter phone number"
+            />
+          </div>
+          <div class="form-group">
+            <label for="message">message</label>
+            <textarea
+              name="message"
+              id="message"
+              placeholder="Enter Message"
+            ></textarea>
+          </div>
+          <input type="submit" value="send" class="btn btn-dark" />
+        </form>
+      </div>
+      <div id="map"></div>
+    </section>
+
+    <!-- section: footer -->
+    <footer id="main-footer" class="bg-dark py-1 text-center">
+      <div class="container">
+        <p>Copyright &copy; 2019, EdgeLedger, All rights reserved</p>
+      </div>
+    </footer>
+    <script src="js/main.js"></script>
+
+    <!--Load the API from the specified URL
+    * The async attribute allows the browser to render the page while the API loads
+    * The key parameter will contain your own API key (which is not needed for this tutorial)
+    * The callback parameter executes the initMap() function
+    -->
+    <script
+      async
+      defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAaz8h0RUj4RJD2MKZhCodMWDOTH5awgWo&callback=initMap"
+    ></script>
+    <!-- google maps api key AIzaSyAaz8h0RUj4RJD2MKZhCodMWDOTH5awgWo -->
   </body>
 </html>
